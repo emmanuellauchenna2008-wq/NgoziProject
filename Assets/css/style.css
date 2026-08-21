@@ -1,0 +1,78 @@
+:root{
+    --color-primary: #7AC64D;
+    --color-primary-light: #8ED45E;
+    --color-bg-dark: #333;
+    --color-bg-darker: #222;
+    --color-bg-body: #727272;
+    --color-bg-carousel: #3A3A3A;
+    --color-text-muted: #9B9B9B;
+    --color-purchase: #7AC64D;
+    --color-border: #444;
+    --color-red-500: oklch(63.7% .237 25.331);
+    --color-red-600: oklch(57.7% .245 27.325);
+    --color-red-700: oklch(50.5% .213 27.518);
+    --color-amber-500: oklch(76.9% .188 70.08);
+    --color-yellow-400: oklch(85.2% .199 91.936);
+    --color-green-100N: oklch(96.2% .044 156.743);
+    --color-green-100: oklch(80.0% .220 154.710);
+    --color-green-400: oklch(79.2% .209 151.711);
+    --color-green-500: oklch(72.3% .219 149.579);
+    --color-green-600: oklch(62.7% .194 149.214);
+    --color-green-700: oklch(52.7% .154 150.069);
+    --color-green-900: oklch(39.3% .095 152.535);
+    --color-gray-50: oklch(98.5% .002 247.839);
+    --color-gray-100: oklch(96.7% .003 264.542);
+    --color-gray-200: oklch(92.8% .006 264.531);
+    --color-gray-300: oklch(87.2% .01 258.338);
+    --color-gray-400: oklch(70.7% .022 261.325);
+    --color-gray-500: oklch(55.1% .027 264.364);
+    --color-gray-600: oklch(44.6% .03 256.802);
+    --color-gray-600T: oklch(40.0% .034 259.802);
+    --color-gray-700: oklch(37.3% .034 259.733);
+    --color-gray-800: oklch(27.8% .033 256.848);
+    --color-gray-900: oklch(21% .034 264.665);
+    --color-gray-950: oklch(13% .028 261.692);
+    --color-black: #000;
+    --color-white: #fff;
+    --color-primary-50T: #fff7ed10;
+    --color-primary-50: #fff7ed;
+    --color-primary-100: #ffedd5;
+    --color-primary-200: #fed7aa;
+    --color-primary-400: #fb923c;
+    --color-primary-500: #f97316;
+    --color-primary-500OT: #f9731630;
+    --color-primary-500T: #f9731625;
+    --color-primary-550: #f9731610;
+    --color-primary-600: #ea580c;
+    --color-primary-700: #c2410c;
+    --color-primary-800: #9a3412;
+    --color-primary-900: #7c2d12;
+    --color-primary-950: #431407;
+    --color-transparent-green:oklch(0.792 0.209 151.711);
+    --bgcolor--transparent-green:oklab(0.723 -0.1885 0.110891/0.2);
+    --bgcolor-transparent-color:oklch(0.764878 0.125924 0.137906/0.2);
+    --transparentbox-color:oklab(0.999994 0.0000455678 0.0000200868/0.1);
+}
+/* body{
+    background-color:var(--color-bg-body) ;
+} */
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.allbtn{
+    color: var(--color-gray-400);
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.allbtn:hover{
+    background-color: var(--color-gray-800);
+    transition: all 500ms linear;
+    cursor: pointer;
+}
