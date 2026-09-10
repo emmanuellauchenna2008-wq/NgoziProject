@@ -31,7 +31,7 @@
     display: grid;
     flex-direction: column;
     grid-template-columns: 1fr 1fr ;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .lefthero{
     display: flex;
@@ -155,14 +155,15 @@ margin-top: 40px;
     position: relative;
     width: 100%;
     margin: auto;
-    max-width: 400px;
+    /* max-width: 600px; */
+    /* overflow: hidden; */
 }
 
-.img{
+.heroimage{
     position: relative;
-    width: 100%;
+    width: 90%;
     margin-top: 30px;
-    transform: rotate(-3deg);
+    transform: rotate(-6deg);
     animation-name: shoe;
     animation-duration: 4s;
     animation-timing-function: linear;
@@ -240,7 +241,168 @@ margin-top: 40px;
         transform: translateY(5px);
     }
 }
-@media screen and (max-width:1020px){
+
+.box1{
+    height:90px;
+    width: 90px;
+   background-color: var(--color-primary-500);
+     border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  bottom: 230px;
+  right: 0px;
+  font-size: 1rem;
+}
+.box2{
+    width: 160px;
+    height: 70px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--transparentbox-color
+    ); 
+    /* background: transparent; */
+    backdrop-filter: blur(20px);
+    position: absolute;
+    bottom: 200px;
+    right:360px;
+    border-radius: 10px;
+}
+.iconcont{
+display: flex;
+flex-direction: column;
+}
+.icon{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 30px;
+width: 30px;
+color: var( --color-transparent-green);
+background: var( --bgcolor--transparent-green);
+border-radius: 50%;
+text-align: center;
+margin-bottom: 10px;
+padding-top: 5px;
+}
+
+.freecont{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.freecont h3{
+ display: flex;
+ flex-direction: column;
+ 
+ gap: 10px;
+ font-size: 1rem;
+ color: var(--color-white);
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.freecont p{
+ /* padding-left: 40px; */
+ font-size: 14px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color: var(--color-gray-400);
+}
+.box3{
+    width: 150px;
+    height: 50px;
+  background-color: var(--transparentbox-color
+    ); 
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 100px;
+    right:-10px;
+    border-radius: 10px;
+}
+.icon2{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+color: var( --color-primary-600);
+background: var(--bgcolor-transparent-color);
+height: 30px;
+width: 30px;
+border-radius: 50%;
+text-align: center;
+padding-top: 5px;
+margin-top: 2px;
+margin-left: 5px;
+}
+.cat{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-gray-900);
+     padding-top: 100px;
+     gap: 40px;
+}
+.categoryimages{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+    
+}
+.categoryimages img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.categorycards{
+    position: relative;
+}
+.category{
+  display: flex;
+  justify-content: space-between;
+}
+.shopcont{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.shopCt{
+    color: var(--color-white);
+    font-size: 2.5rem;
+}
+.perfect{
+       font-size: 1.2rem;
+       color: var(--color-gray-400);
+}
+.viewcont{
+   display: flex;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.View{
+    font-weight: 600;
+    font-size: 1rem;
+   color: var(--color-primary-500);
+   transition: all 0.5s linear;
+}
+.View:hover{
+    color: var(--color-primary-700);
+}
+.letterscont{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:1023px){
     .herocont{
         display: grid;
         grid-template-columns: 1fr;
@@ -276,102 +438,6 @@ margin-top: 40px;
    text-align: center;
    /* width: 500px; */
 }  
-}
-.box1{
-    height:90px;
-    width: 90px;
-   background-color: var(--color-primary-500);
-     border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: absolute;
-  bottom: 230px;
-  right: 0px;
-  font-size: 1rem;
-}
-.box2{
-    width: 150px;
-    height: 50px;
-  background-color: var(--transparentbox-color
-    ); 
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 200px;
-    left: -10px;
-    border-radius: 10px;
-}
-.icon{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-color: var( --color-transparent-green);
-background: var( --bgcolor--transparent-green);
-height: 30px;
-width: 30px;
-border-radius: 50%;
-text-align: center;
-padding-top: 5px;
-margin-top: 2px;
-margin-left: 5px;
-}
-.box2 h3{
- display: flex;
- gap: 10px;
- font-size: 1rem;
- color: var(--color-white);
- font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.box2 p{
- padding-left: 40px;
- font-size: 14px;
- font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- color: var(--color-gray-400);
-}
-.box3{
-    width: 150px;
-    height: 50px;
-  background-color: var(--transparentbox-color
-    ); 
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 100px;
-    right:-10px;
-    border-radius: 10px;
-}
-.icon2{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-color: var( --color-primary-600);
-background: var(--bgcolor-transparent-color);
-height: 30px;
-width: 30px;
-border-radius: 50%;
-text-align: center;
-padding-top: 5px;
-margin-top: 2px;
-margin-left: 5px;
-}
-.box3 h3{
- display: flex;
- gap: 10px;
- font-size: 1rem;
- color: var(--color-white);
- font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.box3 p{
- padding-left: 40px;
- font-size: 14px;
- font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- color: var(--color-gray-400);
-}
 .shopNavigate{
     display: flex;
     align-items: center;
@@ -381,123 +447,21 @@ margin-left: 5px;
     grid-column: span 1;
     /* width: 100%; */
 }
-.cat{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
-    padding-top: 70px;
-}
-.shopCt{
-    font-size: 2rem;
-}
-.perfect{
-    font-size: 1.1rem;
-}
-.viewcont{
-    margin-top: 20px;
-}
-.cat{
-   background-color: var(--color-gray-950);
-    display: flex;
-    flex-direction: column;
-    padding-top: 50px;
-    padding-left:70px;
-}
-.category{
-   display: flex;
-   flex-direction: column;
-   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.shopCt{
-   color: var(--color-white);
-   font-size: 2.5rem;
-}
-.perfect{
-   color: var(--color-gray-400);
-   font-size: 1.2rem;
-}
-.viewcont{
-    display: flex;
-    flex-direction: column;
-}
-.View{
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding-right: 30px;
-    color: var(--color-primary-600);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1rem;
-}
-.View:hover{
-    color: var(--color-primary-700);
-    transition: all 300ms ease-in-out;
-}
-.images{
+.categoryimages{
     display: grid;
-   grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+}
+.redshoe{
+grid-column: 1/3;
+}
 
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    
 }
-.imagecont{
-    display: flex;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-    position: relative;
-    width: 400px;
-    border-radius: 10px;
-    transition: all 300ms ease-in-out ;
-}
-.imagecont:hover{
-    transform: scale(1.04);
-}
-.letterscont{
-    position: absolute;
-    bottom: 40px;
-    padding: 10px;
-    display: block;
-    gap: 10px;
-}
-.realimg{
-    border-radius: 20px;
-}
-.title{
-    color: var(--color-white);
-   background: var(--transparentbox-color);
-   backdrop-filter: blur(2px);
-    width: 100px;
-    text-align: center;
-    border-radius: 10px;
-    margin-top: 20px;
-    font-size: 1rem;
-    font-weight: 600;
-}
-.run{
-    margin-top: 10px;
-    color: var(--color-white);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2rem;
-}
-.imagesp{
-    color: var(--color-gray-300);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.shopnow{
-    position: relative;
-    top: 30px;
-   color: var(--color-white);
-   font-size: 1.1rem;
-   font-weight: 800;
-}
-.fa-arrow-right{
-    transition: all 300ms ease-in-out;
-}
-.imagecont .shopnow .fa-arrow-right:hover{
-    transform: translatex(5px);
+@media screen and (max-width:640px){
+    .categoryimages{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .redshoe{
+        grid-column: auto;
+    }
 }
