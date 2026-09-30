@@ -2,6 +2,7 @@
     --color-primary: #7AC64D;
     --color-primary-light: #8ED45E;
     --color-bg-dark: #333;
+    --color-bg-dark: #333;
     --color-bg-darker: #222;
     --color-bg-body: #727272;
     --color-bg-carousel: #3A3A3A;
@@ -47,11 +48,11 @@
     --color-primary-700: #c2410c;
     --color-primary-800: #9a3412;
     --color-primary-900: #7c2d12;
+    --transparentbox-color:oklab(0.999994 0.0000455678 0.0000200868/0.1);
     --color-primary-950: #431407;
     --color-transparent-green:oklch(0.792 0.209 151.711);
     --bgcolor--transparent-green:oklab(0.723 -0.1885 0.110891/0.2);
     --bgcolor-transparent-color:oklch(0.764878 0.125924 0.137906/0.2);
-    --transparentbox-color:oklab(0.999994 0.0000455678 0.0000200868/0.1);
     --brownicon: oklab(0.408394 0.0915778 0.0719866/0.3);
     --greencolor: oklab(0.393 -0.0842928 0.0438146/0.3);
 }
