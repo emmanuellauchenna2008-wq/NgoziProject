@@ -154,15 +154,15 @@ margin-top: 40px;
 }
 .righthero{
     position: relative;
-    width: 100%;
+     width: 450px;
+    max-width: 600px;
     margin: auto;
-    /* max-width: 600px; */
     /* overflow: hidden; */
 }
 
 .heroimage{
     position: relative;
-    width: 90%;
+    width: 100%;
     margin-top: 30px;
     transform: rotate(-6deg);
     animation-name: shoe;
@@ -314,12 +314,16 @@ padding-top: 5px;
  color: var(--color-gray-400);
 }
 .box3{
-    width: 150px;
-    height: 50px;
-  background-color: var(--transparentbox-color
-    ); 
+    width: 160px;
+    height: 70px;
     display: flex;
-    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--transparentbox-color
+    ); 
+    /* background: transparent; */
+    backdrop-filter: blur(20px);
     position: absolute;
     bottom: 100px;
     right:-10px;
@@ -396,7 +400,6 @@ margin-left: 5px;
     flex-direction: column;
     gap: 10px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 }
 .shopCt{
     color: var(--color-white);
@@ -896,10 +899,17 @@ padding-bottom: 80px;
 .customerscont{
     display: flex;
 }
+.customerscont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 .happycustomers{
     border-right: 1px solid var(--color-gray-400);
     padding-right:10px;
-    padding-left: 10px;
+    /* padding-left: 30px; */
 }
 .stepupcont{
      min-height: 100vh;
@@ -953,7 +963,6 @@ padding-bottom: 80px;
      border: 1px solid var(--color-primary-600);
      border: none;
      padding-left: 10px;
-     border: 1px solid green;
 }
 .input:focus{
       border: 1px solid var(--color-white);
@@ -969,23 +978,94 @@ padding-bottom: 80px;
     color: var(--color-primary-500);
 }
 .appscont{
-    align-items: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin-top: 100px;
+    gap: 30px;
 }
 .appstorage{
     display: flex;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .applestore{
     display: flex;
-  flex-direction: column;
-  background-color:var( --color-bg-darker);
-grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 60px;
+    gap: 10px;
+    border-radius: 10px;
+ background-color: rgba(17, 17, 17, 0.85);
+ transition: all 0.5s ease-in-out;
+ cursor: pointer;
 }
-  
+.applestore:hover{
+    background-color: rgba(0, 0, 0, 1);
+}
+.applecont span{
+    font-size: 0.7rem;
+    color: var(--color-gray-400);
+}
+.Strideclub{
+    display: flex;
+    flex-direction: column;
+     justify-content: space-between;
+    background-color: var(--color-gray-900);
+     padding: 50px 50px;
+    padding-top: 50px;
+}
+.joincont{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.join h3{
+    color: var(--color-white);
+    font-size: 1.3rem;
+}
+.join{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.join p{
+     color: var(--color-gray-400);
+    font-size: 1.1rem;
+   font-weight: 500;
+    text-align: start;
+}
+.subscribe{
+    display: flex;
+    gap: 10px;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.enteremail{
+    border: none;
+    padding: 20px 60px;
+    background: transparent;
+    border: 1px solid var(--color-gray-400);
+    border-radius: 20px ;
+    color: white;
+}
+.enteremail:focus{
+outline: none;
+ border: 6px double var(--color-primary-500);
+}
+.subbtn{
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: none;
+    color: var(--color-white);
+    background-color: var(--color-primary-600);
+    font-size: 1rem;
+    font-weight: 700;
+}
 @media screen and (max-width:1023px){
     .herocont{
         padding-top: 90px;
@@ -1094,6 +1174,35 @@ width: 100%;
     padding-left: 20px;
     object-fit: cover;
     border-radius: 10px;
+}
+.Strideclub{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    background-color: var(--color-gray-900);
+     padding: 50px 50px;
+    padding-top: 50px;
+}
+.joincont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.join{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: justify;
+}
+.join p{
+    color: var(--color-gray-400);
+    font-size: 1.1rem;
+   font-weight: 500;
+   text-align: center;
 }
 }
 @media screen and (max-width:640px){
