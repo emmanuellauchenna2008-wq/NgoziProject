@@ -1,0 +1,104 @@
+.footer{
+    border-top: solid 0.5px var(--color-gray-600);
+    padding: 40px 10px;
+    padding-top: 20px;
+    background-color: var( --color-gray-900);
+}
+.fisrtchildfooter{
+    padding: 20px ;
+    display: flex;
+    gap: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.leftfooter{
+ display: grid;
+grid-template-columns: repeat(4,1fr);
+gap: 20px;
+}
+.Ngstridecont{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footerpre{
+    color: var(--color-gray-400);
+    font-size: 1.1rem;
+}
+.footericons{
+    display: flex;
+    gap: 10px;
+    color: var(--color-gray-400);
+}
+.footericons .fab{
+    cursor: pointer;
+   transition: all 0.5s ease-in-out;
+}
+.footericons .fab:hover{
+    color: var( --color-primary-700);
+}
+.footerlinks{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footerlinks h3{
+    color: var(--color-white);
+    font-size: 1.2rem;
+}
+.shoplink {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.shoplink li a{
+    color: var(--color-gray-400);
+     transition: all 0.5s ease-in-out;
+     font-size: 1.1rem;
+}
+.shoplink li a:hover{
+color: var(--color-primary-700);
+}
+.Secondchildfooter{
+     padding: 20px ;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+      margin-top: 60px;
+      border-top: solid 0.5px var(--color-gray-600);
+      gap: 10px;
+      color: var(--color-gray-400);
+}
+.privacy{
+    display: flex;
+    gap: 15px;
+}
+.privacy p{
+    cursor: pointer;
+     transition: all 0.5s ease-in-out;
+}
+.privacy p:hover{
+    color: var(--color-gray-200);
+}
+.privacyicons{
+    display: flex;
+    gap: 5px;
+    font-size: 1.5rem;
+}
+@media screen and (max-width:1023px){
+.leftfooter{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.Secondchildfooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+}
+@media screen and (max-width:640px) {.leftfooter{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+}
