@@ -1,0 +1,374 @@
+@import "./style.css";
+@import "./header.css";
+@import "./footer.css";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.categoryhead{
+    display: flex;
+    gap: 20px;
+     border-bottom: solid 0.5px var(--color-gray-600);
+    padding: 20px;
+    background-color: var(--color-gray-950);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.categoryhead h5 a{
+      color: var(--color-gray-400);
+      font-size: 1.1rem;
+}
+.categoryhead p{
+    text-align: center;
+      color: var(--color-gray-400);
+      font-size: 1.1rem;
+}
+.categoryhead h5{
+     color: var(--color-white);
+      font-size: 1.1rem;
+}
+.fashion{
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   background-color: var(--color-gray-900);
+   padding: 20px;
+   padding-bottom: 80px;
+   padding-top: 80px;
+}
+.fashion h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 30px;
+    background-color: var(--brownicon);
+    color: var(--color-primary-400);
+    font-size: 0.8rem;
+    border-radius: 20px;
+}
+.fashion h3{
+    display: flex;
+    font-size: 2rem;
+    color: var(--color-white);
+    text-align: center;
+}
+.fashion p{
+    display: flex;
+    text-align: center;
+    color: var(--color-gray-400);
+    font-size: 1rem;
+    max-width: 800px;
+}
+.whatwedo{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-gray-950);
+     border-top: solid 0.5px var(--color-gray-600);
+    padding: 30px;
+   padding-bottom: 40px;
+   padding-top: 60px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.whatwedocont{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.whatweoffer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.whatweoffer h1{
+    display: flex;
+    font-size: 2rem;
+    color: var(--color-white);
+    text-align: center;
+}
+.whatweoffer p{
+    display: flex;
+    /* text-align: center; */
+    color: var(--color-gray-400);
+    font-size: 1rem;
+
+}
+.imaage{
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+}
+.clothingbg{
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+}
+.tablecont{
+     display: flex;
+    flex-direction: column;
+    background-color: var(--color-gray-950);
+     border-top: solid 0.5px var(--color-gray-600);
+    padding: 30px;
+   padding-bottom: 40px;
+   padding-top: 30px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.happycont{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    place-items: center;
+}
+.happycont h1{
+     display: flex;
+     align-items: center;
+    font-size: 1.5rem;
+    color: var(--color-white);
+    text-align: center;
+    justify-content: center;
+}
+.happycont p{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    /* text-align: center; */
+    color: var(--color-gray-400);
+    font-size: 0.9rem;
+
+}
+.stepupcont{
+     min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: 
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05)  1px, transparent 1px),
+    linear-gradient(135deg, var(--color-primary-600) );
+    background-size: 50px 50px,
+                 50px 50px, 
+                 cover 
+    ;
+    background-position: 0 0,
+    0 0,
+    center;
+    position:relative;
+    left: 0px;
+    right: 0px;
+    gap: 30px;
+    padding: 50px;
+}
+.readytostepup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-white);
+    justify-content: center;
+    gap: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.readytostepup h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.stridepara{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    max-width: 570px;
+}
+.buttons{
+   display: flex;
+   gap: 10px;
+  width: 100%; 
+   flex-wrap: wrap;
+   margin-top: 20px;
+}
+.inputcont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+      
+}
+.inputcont:focus-within{
+ border: 2px solid var(--color-primary-500);
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary-50T);
+    color:  var(--color-white);
+    border-radius: 30px;
+     border: 1px solid var(--color-primary-600);
+     border: none;
+     padding-left: 20px;
+     border: 2px solid rgba(255, 250, 250, 0.363);
+     font-weight: 500;
+     width: 100%;
+     padding: 20px;
+}
+.input::placeholder{
+    color:  rgba(255, 250, 250, 0.363);
+}
+.input:focus{
+      border: 2px solid var(--color-white);
+      outline: none;
+}
+.getcont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 150px; */
+    border-radius: 30px;
+    border: none;
+    color: var(--color-primary-500);
+    font-weight: 600;
+    font-size: 1.2rem;
+     padding: 20px;
+}
+.appscont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 30px;
+}
+.appstorage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.applestore{
+    display: flex;
+   align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 60px;
+    gap: 10px;
+    border-radius: 10px;
+ background-color: rgba(17, 17, 17, 0.85);
+ transition: all 0.5s ease-in-out;
+ cursor: pointer;
+}
+.applestore:hover{
+    background-color: rgba(0, 0, 0, 1);
+}
+.applecont span{
+    font-size: 0.7rem;
+    color: var(--color-gray-400);
+}
+.Strideclub{
+    display: flex;
+    flex-direction: column;
+     justify-content: space-between;
+    background-color: var(--color-gray-900);
+     padding: 50px 50px;
+    padding-top: 50px;
+}
+.joincont{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.join h3{
+    color: var(--color-white);
+    font-size: 1.3rem;
+}
+.join{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.join p{
+     color: var(--color-gray-400);
+    font-size: 1.1rem;
+   font-weight: 500;
+    text-align: start;
+}
+.subscribe{
+    display: flex;
+    gap: 10px;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.enteremail{
+    border: none;
+    padding: 20px 60px;
+    background: transparent;
+    border: 1px solid var(--color-gray-400);
+    border-radius: 20px ;
+    color: white;
+}
+.enteremail:focus{
+outline: none;
+ border: 6px double var(--color-primary-500);
+}
+.subbtn{
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: none;
+    color: var(--color-white);
+    background-color: var(--color-primary-600);
+    font-size: 1rem;
+    font-weight: 700;}
+@media screen and (max-width:1023px){
+    .happycont{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+.Strideclub{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    background-color: var(--color-gray-900);
+     padding: 50px 50px;
+    padding-top: 50px;
+}
+.joincont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.join{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: justify;
+}
+.join p{
+    color: var(--color-gray-400);
+    font-size: 1.1rem;
+   font-weight: 500;
+   text-align: center;
+}
+}
+@media screen and (max-width:640px){
+.whatwedocont{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.happycont{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+}
