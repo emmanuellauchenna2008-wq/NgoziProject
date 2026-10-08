@@ -446,6 +446,34 @@ outline: none;
    text-align: center;
 }
 }
+@media screen and (max-width:1023px){
+    .collectionimages{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  
+}
+.opacitycont{
+    width: 100%;
+    height: 422px;
+}
+.cat{
+      display: flex;
+    flex-direction: column;
+    background-color: var(--color-gray-950);
+    padding: 20px 20px;
+     padding-top: 100px;
+     gap: 40px;
+     padding-bottom: 50px;
+}
+.collectioncont{
+    display: flex;
+    flex-direction: column;
+     padding: 20px 20px;
+    padding-top: 80px;
+     padding-bottom: 100px;
+}
+}
 @media screen and (max-width:640px){
     .category{
         display: flex;
@@ -484,11 +512,6 @@ outline: none;
     .opacitycont{
         width: 100%;
         height: 422px;
-    }
-    .freeshippingcont{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
     }
     .newArrivals{
      display: flex;
