@@ -303,7 +303,7 @@
 }
 .enteremail{
     border: none;
-    padding: 20px 60px;
+    padding: 20px 20px;
     background: transparent;
     border: 1px solid var(--color-gray-400);
     border-radius: 20px ;
