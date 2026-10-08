@@ -1,9 +1,5 @@
 document.addEventListener("DOMContentLoaded" , ()=> {
-
-
-
 let category = document.getElementById('categoryimages');
-
 function displayproducts() {
     let categorydisplay = categoryimages.map(function(product) {
        return`

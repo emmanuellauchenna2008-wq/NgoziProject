@@ -1,59 +1,44 @@
 document.addEventListener("DOMContentLoaded", ()=>{
-     let shoparray = [
-            {productid:1, img: "Assets/images/newlongred shoe.PNG", topcont: "-18%", best: "Bestseller", new:"",category:"Running", number: "$179", strike: "$219", title: "Velocity Runner Pro", star: 4.9, circle1: "redcircle", circle2:"blackcircle", circle3:"bluecircle", circle4:"", sizes: " 12 sizes available", similarimg: "/Assets/images/longgreenshoe.PNG"
-    },
-     {productid:2, img: "/Assets/images/longbrownshoes.PNG", topcont: "", best: "Bestseller", new:"",category:"Sneakers", number: "$129", strike: " ", title: "Streetwise Classic", star: 4.8, circle1: "whitecircle", circle2:"blackcircle", circle3:"navybluecircle", circle4:"browncircle", sizes: " 12 sizes available", similarimg: ""
-    },
-     {productid:3, img: "/Assets/images/longwhiteshoe.PNG", topcont: "", best: "", new:"NEW",category:"basketball", number: "$199", strike: "", title: "Court Dominator X", star: 4.7, circle1: "blackcircle", circle2:"whitecircle", circle3:"bluecircle", circle4:"", sizes: " 11 sizes available", similarimg: ""
-    },
-     {productid:4, img: "Assets/images/newlongred shoe.PNG", topcont: "-17%", best: "", new:"",category:"Boots", number: "$189", strike: "$229", title: "Trail Blazer GTX", star: 4.8, circle1: "browncircle", circle2:"graycircle", circle3:"burlycircle", circle4:"", sizes: " 12 sizes available", similarimg: ""
-    },
-     {productid:5, img: "/Assets/images/longgreenshoe.PNG", topcont: "-", best: "", new:"NEW",category:"Running", number: "$249", strike: " ", title: "Marathon Elite", star: 4.9, circle1: "lightgreencircle", circle2:"whitecircle", circle3:"blackcircle", circle4:"", sizes: " 11 sizes available", similarimg: ""
-    },
-     {productid:6, img: "/Assets/images/grayshoe.PNG", topcont: "", best: "", new:"NEW",category:"sandals", number: "$59", strike: "", title: "Velocity Runner Pro", star: 4.8, circle1: "graycircle",circle2:"blackcircle", circle3:"bluecircle", circle4:"", sizes: " 8 sizes available", similarimg: " "
-    },
-     {productid:7, img: "/Assets/images/graybackground.PNG", topcont: "", best: "", new:"",category:"Sneakers", number: "$99", strike: " ", title: "Court Legacy Low", star: 4.5, circle1: "whitecircle", circle2:"whitecircle", circle3:"whitecircle", circle4:"blackcircle", sizes: " 12 sizes available", similarimg: ""
-    },
-     {productid:8, img: "Assets/images/newlongred shoe.PNG", topcont: "", best: "", new:"NEW",category:"Running", number: "$179", strike: "$219", title: "Court Legacy Low", star: 4.7, circle1: "whitecircle", circle2:"blackcircle", circle3:"bluecircle", circle4:"", sizes: " 11 sizes available", similarimg: "/Assets/images/longslippers.PNG"
-    }
-     ];
-     let collectionimages = document.querySelectorAll(".collectionimages");
-     function displayshop() {
-          let shopdetails = shoparray.map(function(shop){
-               return`
-               <div class="opacitycont">
-                      <img src="${shop.img}"  class="imagechild1 imagechild3" width="100%">
-                  <img src="${shop.similarimg}" alt="" class="imagechild2 imagechild3" width="100%">
-                  <div class="bestseller">
-                       <p></p>
-                     <h1></h1>
-                  </div>
-                     <div class="addtocart">
-                        <p><i class="fas fa-shopping-bag"></i> Add to cart</p>
-                        <i class="fas fa-heart"></i>
-                     </div>
-                  </div>
-                     <div class="velocityRunner">
-                        <div class="Running">
-                           <p>Running</p>
-                           <p><i class="fas fa-star"></i>4.9</p>
-                        </div>
-                        <h2>velocity Runner Pro</h2>
-                        <div class="span">
-                           <span>$179</span>
-                          <strike>$219</strike>
-                        </div>
-                        <div class="circles">
-                           <p class="redcircle"></p>
-                           <p class="blackcircle"></p>
-                           <p class="bluecircle"></p>
-                        </div>
-                        <p class="sizes">
-                           12 sizes available
-                        </p>
-                     </div>
-               </div>
-               `
-          })
-     }
+   //   let collectionimages = document.getElementById("collectionimages");
+   //   function displayshop() {
+   //        let shopdetails = productarray.map(function(shop){
+   //             return`
+   //             <div class="opacitycont">
+   //                    <img src="${shop.img}"  class="imagechild1 imagechild3" width="100%">
+   //                <img src="${shop.similarimg}" alt="" class="imagechild2 imagechild3" width="100%">
+   //                <div class="${shop.classcont}">
+   //                     <p>${shop.topcont}</p>
+   //                   <h1>${shop.best}</h1>
+   //                </div>
+   //                   <div class="addtocart">
+   //                      <p><i class="fas fa-shopping-bag"></i> Add to cart</p>
+   //                      <i class="fas fa-heart"></i>
+   //                   </div>
+   //                </div>
+   //                   <div class="velocityRunner">
+   //                      <div class="Running">
+   //                         <p>${shop.category}</p>
+   //                         <p><i class="fas fa-star"></i>4.9</p>
+   //                      </div>
+   //                      <h2>${shop.title}</h2>
+   //                      <div class="span">
+   //                         <span>${shop.number}</span>
+   //                        <strike>${shop.strike}</strike>
+   //                      </div>
+   //                      <div class="circles">
+   //                         <p class="${shop.circle1}"></p>
+   //                         <p class="${shop.circle2}"></p>
+   //                         <p class="${shop.circle3}"></p>
+   //                           <p class="${shop.circle4}"></p>
+   //                      </div>
+   //                      <p class="sizes">
+   //                         ${shop.sizes}
+   //                      </p>
+   //                   </div>
+   //             </div>
+   //             `
+   //        });
+   //        collectionimages.innerHTML = shopdetails.join("");
+   //   }
+   //   displayshop();
 });
