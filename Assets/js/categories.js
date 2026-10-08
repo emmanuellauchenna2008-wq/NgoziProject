@@ -11,7 +11,7 @@ function displayproducts() {
                <h1 class="run">${product.category}</h1>
                <p class="imagesp">${product.description}</p>
                <div class="shopnow">
-                 <a href="/pages/productdetails.html?id=${product.id}">Shop Now <i class="fas fa-arrow-right"></i></a>
+                 <a href="/pages/productdetails.html?categories=${product.category}">Shop Now <i class="fas fa-arrow-right"></i></a>
                </div>
                   </div>
                  </div> 

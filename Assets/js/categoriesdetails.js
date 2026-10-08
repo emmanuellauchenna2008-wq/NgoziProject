@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", ()=>{
-     let categoryDetails =[
-            
-     ];
+    let allCategories = document.getElementById("allCategories");
+    let                                                                                                                                                                            
 });
