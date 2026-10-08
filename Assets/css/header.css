@@ -79,8 +79,8 @@
     align-items: center;
     justify-content: center;
     /* gap: 20px; */
-    flex-wrap: wrap;
-    overflow: hidden;
+    flex-wrap: nowrap;
+    margin-right: 40px;
 }
 #togglebtn{
     display: none;
