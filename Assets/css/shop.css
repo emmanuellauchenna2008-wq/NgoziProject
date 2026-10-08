@@ -371,6 +371,7 @@
     border: 1px solid white;
      background-color: var(--color-gray-950);
      padding-left: 10px;
+     color: var(--color-gray-400);
 }
 .buttons{
     display: flex;

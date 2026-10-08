@@ -72,13 +72,16 @@ ul{
     list-style: none;
 }
 .allbtn{
-    color: var(--color-gray-400);
-    width: 50px;
-    height: 50px;
-    border-radius: 12px;
+    color: var(--color-gray-300);
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
     background: none;
     border: none;
     cursor: pointer;
+}
+.allbtn a{
+       color: var(--color-gray-300);
 }
 .allbtn:hover{
     background-color: var(--color-gray-800);

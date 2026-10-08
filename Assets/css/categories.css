@@ -330,7 +330,13 @@ outline: none;
     color: var(--color-white);
     background-color: var(--color-primary-600);
     font-size: 1rem;
-    font-weight: 700;}
+    font-weight: 700;
+      cursor: pointer;
+    transition: all 0.5s ease-in;
+    }
+    .subbtn:hover{
+       background-color: var(--color-primary-800);
+    }
 @media screen and (max-width:1023px) {
     .categoryimages{
     display: grid;
@@ -389,4 +395,13 @@ outline: none;
         justify-content: center;
         align-items: center;
     }
+    .buttons{
+    display: flex;
+    flex-direction: column;
+      }
+    .subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 }

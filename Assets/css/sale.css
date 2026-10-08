@@ -1,3 +1,478 @@
 @import "./style.css";
 @import "./header.css";
 @import "./footer.css";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.categoryhead{
+    display: flex;
+    gap: 20px;
+     border-bottom: solid 0.5px var(--color-gray-600);
+    padding: 20px;
+    background-color: var(--color-gray-950);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.categoryhead h5 a{
+      color: var(--color-gray-400);
+      font-size: 1.1rem;
+}
+.categoryhead p{
+    text-align: center;
+      color: var(--color-gray-400);
+      font-size: 1.1rem;
+}
+.categoryhead h5{
+     color: var(--color-white);
+      font-size: 1.1rem;
+}
+.collectioncont{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-gray-950);
+     padding: 50px 50px;
+    padding-top: 80px;
+    gap: 30px;
+    padding-bottom: 100px;
+}
+.collectionimages{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    width: 100%;
+    /* margin: auto; */
+    gap: 10px;
+    transition: all 1s linear;
+    object-fit: cover;
+    /* border-bottom: 1px solid var(--color-gray-400); */
+     padding-bottom: 30px;
+}
+.collectionimage1{
+     display: grid;
+       width: 100%;
+       /* height: 574.36px; */
+     position: relative;
+     overflow: hidden;
+      transition: all 1s linear;
+      cursor: pointer;
+       transition: all 0.5s linear;
+}
+.opacitycont{
+    width: 100%;
+   height: 288px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+     transition: all 0.5s linear;
+}
+.opacitycont img{
+     width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.imagechild1{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s linear;
+    object-fit: cover;
+}
+ .collectionimage1 .opacitycont .imagechild1:hover{
+    opacity: 0;
+    inset: 0;
+    transform: scale(1.05);
+}
+.imagechild2{
+    width: 100%;
+    height: 100%;
+     opacity: 0;
+     position: absolute;
+     inset: 0px;
+     border-radius: 15px;
+      transition: all 0.5s linear;
+}
+
+.collectionimage1:hover .imagechild2  {
+ opacity: 1;
+    inset: 1;
+    transform: scale(1.05);
+}
+.imagechild3{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s linear;
+}
+.collectionimage1:hover .imagechild3{
+    transform: scale(1.05);
+}
+.bestseller{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: var(--color-white);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.bestseller p{
+    width: 80px;
+    background-color: var(--color-primary-500);
+    border-radius: 10px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.bestseller h1{
+   font-size: 1rem;
+   width: 85px;
+   background-color: var(--color-amber-500);
+   border-radius: 10px;
+   text-align: center;
+}
+.new{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: var(--color-white);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.new h1{
+    font-size: 1rem;
+   width: 50px;
+   background-color: var( --color-green-500);
+   border-radius: 10px;
+   text-align: center;
+}
+.addtocart{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    opacity: 0;
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+ .collectionimage1:hover .addtocart{
+    opacity: 1;
+ }
+.addtocart p{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 10px;
+      gap: 10px;
+     width: 100%;
+      font-size: 1rem;
+      /* min-width: 350px; */
+      height: 40px;
+     background-color: var(--color-white);
+     border-radius: 10px;
+     font-weight: 700;
+}
+.addtocart .fa-heart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+    height: 40px;
+    width: 50px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+.addtocart .fa-heart:hover{
+    color: red;
+}
+.velocityRunner{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.velocityRunner h2{
+    color: var(--color-white);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.velocityRunner h2:hover{
+    color: var(--color-primary-600);
+}
+.Running{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+.Running p{
+   color: var(--color-gray-400);
+   font-size: 1rem;
+}
+.Running .fa-star{
+     font-size: 12px;
+    color: yellow;
+}
+.span{
+    display: flex;
+    gap: 5px;
+    color: var(--color-gray-400);
+}
+.span span{
+    color: var(--color-white);
+    font-weight: 800;
+}
+.circles{
+    display: flex;
+    gap: 5px;
+}
+.redcircle{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+.blackcircle{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+.bluecircle{
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+.whitecircle{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+.navybluecircle{
+    width: 15px;
+    height: 15px;
+    background-color: var(--color-gray-800);
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+.browncircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: brown;
+    border: 1px solid gray;
+}
+.graycircle{
+     width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: gray;
+    border: 1px solid gray;
+}
+.burlycircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: burlywood;
+    border: 1px solid gray;
+}
+.lightgreencircle{
+    width: 15px;
+    height: 15px;
+   border-radius: 50%;
+   background-color: var(--color-purchase);
+    border: 1px solid gray;
+}
+.sizes{
+  color: var(--color-gray-400);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 0.7px;
+}
+.allproducts{
+    display: flex;
+}
+.shop{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.shop h1{
+    color: var(--color-white);
+}
+.shop p{
+    color: var(--color-gray-400);
+}
+.filter{
+    display: flex;
+   flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.filter h1{
+    color: var(--color-white);
+    font-size: 1.2rem;
+}
+.filter h2{
+     color: var(--color-gray-400);
+    font-size: 1.2rem;
+}
+.filter p{
+    color: var(--color-gray-400);
+}
+.products{
+    padding: 10px;
+    background-color: var(--color-primary-500T);
+    border-radius: 10px;
+    color: var(--color-primary-600);
+      cursor: pointer;
+}
+.category{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    transition: all 0.5s ease-in;
+     border-radius: 10px;
+       cursor: pointer;
+}
+.category:hover{
+    background-color: var( --transparentbox-color);
+}
+.price{
+    display: flex;
+    gap: 10px;
+}
+.max{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.max input{
+    width: 100px;
+     height: 30px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid white;
+     background-color: var(--color-gray-950);
+     padding-left: 10px;
+     color: var(--color-gray-400);
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+    border: none;
+}
+.apply{
+    width: 150px;
+    height: 40px;
+    background-color: var(--color-green-900);
+    border: none;
+    color: var(--color-white);
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: all 1s ease-in;
+}
+.apply:hover{
+   background-color: var(--greencolor);
+}
+.reset{
+    width: 150px;
+    height: 40px;
+    background-color: var(--color-gray-950);
+    border: none;
+    color: var(--color-white);
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: all 1s ease-in;
+}
+.reset:hover{
+    border: 2.5px solid var(--color-green-900);
+}
+@media screen and (max-width:1023px){
+    .collectionimages{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  
+}
+.opacitycont{
+    width: 100%;
+    height: 422px;
+}
+.cat{
+      display: flex;
+    flex-direction: column;
+    background-color: var(--color-gray-950);
+    padding: 20px 20px;
+     padding-top: 100px;
+     gap: 40px;
+     padding-bottom: 50px;
+}
+.collectioncont{
+    display: flex;
+    flex-direction: column;
+     padding: 20px 20px;
+    padding-top: 80px;
+     padding-bottom: 100px;
+}
+ .allproducts{
+    display: flex;
+   flex-direction: column;
+}
+}
+@media screen and (max-width:640px){
+     .collectioncont{
+         display: flex;
+         flex-direction: column;
+         padding: 20px 20px;
+         padding-top: 80px;
+          padding-bottom: 100px;
+    }
+    .collectionimages{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+    .cat{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-gray-950);
+    padding: 20px 20px;
+     padding-top: 100px;
+     gap: 40px;
+     padding-bottom: 50px;
+    }
+    .opacitycont{
+        width: 100%;
+        height: 422px;
+    }
+    .opacitycont img{
+     width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.imagechild1{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s linear;
+    object-fit: cover;
+}
+}

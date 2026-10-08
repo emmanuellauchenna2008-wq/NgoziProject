@@ -390,7 +390,7 @@
 }
 .enteremail{
     border: none;
-    padding: 20px 20px;
+    padding: 20px 60px;
     background: transparent;
     border: 1px solid var(--color-gray-400);
     border-radius: 20px ;
@@ -407,7 +407,13 @@ outline: none;
     color: var(--color-white);
     background-color: var(--color-primary-600);
     font-size: 1rem;
-    font-weight: 700;}
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+.subbtn:hover{
+       background-color: var(--color-primary-800);
+    }
 @media screen and (max-width:1023px){
     .newArrivals{
      display: flex;
@@ -527,4 +533,9 @@ outline: none;
       justify-content: center;
       gap: 10px;
     }
+    .subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 }
