@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded" , ()=> {
 let category = document.getElementById('categoryimages');
 function displayproducts() {
-    let categorydisplay = categoryimages.map(function(product) {
+  let categorydisplay = categoryimages.map(function(product) {
        return`
           <div class=" categorycards">
                   <img src="${product.img}" alt="" width="" class="realimg" height="">
@@ -11,7 +11,7 @@ function displayproducts() {
                <h1 class="run">${product.category}</h1>
                <p class="imagesp">${product.description}</p>
                <div class="shopnow">
-                 <a href="/pages/productdetails.html?categories=${product.category}">Shop Now <i class="fas fa-arrow-right"></i></a>
+                 <a href="/pages/Categoriesdetails.html?category=${product.category}">Shop Now <i class="fas fa-arrow-right"></i></a>
                </div>
                   </div>
                  </div> 
